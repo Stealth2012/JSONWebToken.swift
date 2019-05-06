@@ -1,6 +1,4 @@
 import Foundation
-import CryptoSwift
-
 
 extension HMACAlgorithm: SignAlgorithm, VerifyAlgorithm {
   public func sign(_ message: Data) -> Data {
