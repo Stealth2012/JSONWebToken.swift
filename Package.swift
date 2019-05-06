@@ -1,4 +1,4 @@
-// swift-tools-version:4.0
+// swift-tools-version:5.0
 
 import PackageDescription
 
@@ -24,6 +24,9 @@ let targetDependencies: [Target.Dependency] = ["CryptoSwift"]
 
 let package = Package(
   name: "JWT",
+  platforms: [
+    .macOS(.v10_13), .iOS(.v11),
+  ],
   products: [
     .library(name: "JWT", targets: ["JWT"]),
   ],
